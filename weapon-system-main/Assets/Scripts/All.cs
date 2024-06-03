@@ -106,6 +106,7 @@ public class All : MonoBehaviour
         // 바닥에 닿아 있는지 확인
         foreach (ContactPoint contact in collision.contacts)
         {
+            
             if (contact.point.y < transform.position.y - 0.5f)
             {
                 isGrounded = true;
